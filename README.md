@@ -62,3 +62,28 @@ cargo build --release
 ```
 
 The optimized binary will be located at `target/release/power.exe`.
+
+## PowerShell Script
+
+A PowerShell version of this utility is also provided in the `scripts/` directory for users who prefer scripts over binaries or want to integrate this into PowerShell workflows.
+
+### Functions
+
+- `Suspend-Computer`: Transitions the system to the suspend state (Sleep).
+- `Stop-ComputerHibernate`: Transitions the system to the hibernate state.
+
+### Usage
+
+1. **Import the script**:
+   ```powershell
+   . ./scripts/power.ps1
+   ```
+
+2. **Run the functions**:
+   ```powershell
+   # Put the system to sleep
+   Suspend-Computer
+
+   # Hibernate the system forcefully
+   Stop-ComputerHibernate -Force
+   ```
