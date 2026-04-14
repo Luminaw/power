@@ -6,7 +6,6 @@ A minimal, high-performance CLI utility for managing Windows power states (Sleep
 
 - **Sleep**: Put your computer into suspend mode.
 - **Hibernate**: Save your state to disk and power off completely.
-- **Optimized**: Compiled with extreme optimizations for minimal binary size (opt-level = "z", LTO, etc.).
 - **Safety Checks**: Verifies if the requested power state is allowed by the system before attempting to switch.
 - **Force Mode**: Option to override safety checks if needed.
 
